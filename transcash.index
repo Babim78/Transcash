@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transcash - Confirmation de paiement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      text-align: center;
+    }
+    .code {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 20px 0;
+      padding: 10px;
+      border: 2px dashed #333;
+      border-radius: 5px;
+      background: #fafafa;
+      cursor: pointer;
+    }
+    .hidden-message {
+      display: none;
+      font-size: 1.2rem;
+      color: red;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>✅ Paiement confirmé</h2>
+    <p>Voici votre code Transcash :</p>
+    <div class="code" onclick="reveal()">8472-XXXX-XXXX-0921</div>
+    <p class="hidden-message" id="msg">💀 Attrapé escroc ! Tu n’auras jamais de code ici dal fils de pute fuck youre mim bitch🚨</p>
+  </div>  <script>
+    function reveal() {
+      document.getElementById('msg').style.display = 'block';
+    }
+  </script></body>
+</html>
